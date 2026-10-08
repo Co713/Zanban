@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>攒班 — 像打车一样，约到附近好课</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ========== LANDING ========== -->
+  <section class="view view-landing is-active" id="view-landing" data-view="landing">
+    <header class="topbar topbar-trans">
+      <a class="brand-nav" href="#landing" data-nav="landing">
+        <img class="brand-logo" src="images/logo.svg" alt="攒班" width="32" height="32" />
+        <span>攒班</span>
+      </a>
+      <nav class="top-links">
+        <button type="button" class="login-btn" data-login id="landingLoginBtn">登录</button>
+      </nav>
+    </header>
+
+    <div class="ad-stage" id="adStage" aria-roledescription="carousel" aria-label="平台宣传">
+      <div class="ad-track" id="adTrack">
+
+        <article class="ad-slide ad-slide-hero is-active" data-index="0">
+          <img class="ad-bg" src="images/ad-hero.svg" alt="" />
+          <div class="ad-shade" aria-hidden="true"></div>
+          <div class="ad-copy">
+            <p class="ad-brand">攒班</p>
+            <h2>像打车一样，约到附近好课</h2>
+            <p class="ad-sub ad-tags">
+              <span>打开就搜附近</span>
+              <span>上课才付费</span>
+              <span>随时可退</span>
+              <span>一课一结</span>
+            </p>
+            <div class="cta-row">
+              <button type="button" class="btn-primary" data-login data-after="discover">开始找课</button>
+              <button type="button" class="btn-ghost" data-login data-after="teacher">我是老师</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ad-slide ad-slide-split ad-slide-light" data-index="1">
+          <div class="ad-copy">
+            <p class="ad-eyebrow">核心体验</p>
+            <h2>想上课？直接发请求</h2>
+            <p class="ad-sub ink">按距离找附近好课，看老师信用与试听，满员自动开班。</p>
+            <p class="ad-highlight">学生可预约试课，完全免费体验</p>
+          </div>
+          <figure class="ad-art">
+            <img src="images/ad-teacher.svg" alt="" />
+          </figure>
+        </article>
+
+        <article class="ad-slide ad-slide-split ad-slide-light" data-index="2">
+          <div class="ad-copy">
+            <p class="ad-eyebrow">课卡充值</p>
+            <h2>先充值，上课自动扣</h2>
+            <p class="ad-sub ink">像校园卡一样把钱充进平台，每上一节自动扣一节。充得多送得多。</p>
+          </div>
+          <figure class="ad-art">
+            <img src="images/ad-pay.svg" alt="" />
+          </figure>
+        </article>
+
+        <article class="ad-slide ad-slide-split ad-slide-dark" data-index="3">
+          <div class="ad-copy">
+            <p class="ad-eyebrow warm">攒班拼单</p>
+            <h2>大班一起上，费用一起摊</h2>
+            <p class="ad-sub">人凑齐更便宜，满员才开班，人齐了再通知你。</p>
+          </div>
+          <figure class="ad-art">
+            <img src="images/ad-pool.svg" alt="" />
+          </figure>
+        </article>
+
+        <article class="ad-slide ad-slide-split ad-slide-light" data-index="4">
+          <div class="ad-copy">
+            <p class="ad-eyebrow">上课有礼</p>
+            <h2>上课攒积分，积分换礼物</h2>
+            <p class="ad-sub ink">陪孩子长大，每一堂课都算数。积分灌溉成长树，兑换绘本与课时券。</p>
+          </div>
+          <figure class="ad-art">
+            <img src="images/ad-points.svg" alt="" />
+          </figure>
+        </article>
+
+        <article class="ad-slide ad-slide-split ad-slide-light" data-index="5">
+          <div class="ad-copy">
+            <p class="ad-eyebrow">三方价值</p>
+            <h2>攒的是伴，学的是成长</h2>
+            <ul class="ad-points">
+              <li><strong>家长</strong>孩子想学什么，附近搜一搜，满班就开班</li>
+              <li><strong>老师</strong>有课时就有学生，上完课就秒到账</li>
+              <li><strong>机构</strong>空置时段变成生源，闲置场地变成收入</li>
+            </ul>
+          </div>
+          <figure class="ad-art">
+            <img src="images/ad-hero.svg" alt="" />
+          </figure>
+        </article>
+
+        <article class="ad-slide ad-slide-split ad-slide-dark" data-index="6">
+          <div class="ad-copy">
+            <p class="ad-eyebrow warm">信任机制</p>
+            <h2>一次课付一次钱，不上课不收费</h2>
+            <ul class="ad-points">
+              <li>满员才开班，人齐了再通知你</li>
+              <li>未成班全额退，上几节退几节剩余</li>
+              <li>报名 24 小时冷静期，无条件退</li>
+            </ul>
+            <div class="cta-row" style="margin-top:1.25rem">
+              <button type="button" class="btn-primary" data-login data-after="discover">去附近看看</button>
+            </div>
+          </div>
+          <figure class="ad-art">
+            <img src="images/ad-pay.svg" alt="" />
+          </figure>
+        </article>
+
+      </div>
+
+      <div class="ad-controls">
+        <button type="button" class="ad-nav-btn" id="prevBtn" aria-label="上一则">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M11 3.5L5.5 9L11 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="ad-dots" id="adDots" role="tablist" aria-label="广告进度"></div>
+        <button type="button" class="ad-nav-btn" id="nextBtn" aria-label="下一则">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M7 3.5L12.5 9L7 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APP SHELL ========== -->
+  <div class="app-shell" id="appShell" hidden>
+    <header class="topbar">
+      <a class="brand-nav" href="#landing" data-nav="landing">
+        <img class="brand-logo" src="images/logo.svg" alt="攒班" width="32" height="32" />
+        <span>攒班</span>
+      </a>
+      <nav class="app-nav" id="appNav" aria-label="主导航">
+        <button type="button" class="app-nav-item is-active" data-nav="discover" data-for="student">发现</button>
+        <button type="button" class="app-nav-item" data-nav="orders" data-for="student">我的课</button>
+        <button type="button" class="app-nav-item" data-nav="wallet" data-for="student">课卡</button>
+        <button type="button" class="app-nav-item" data-nav="tree" data-for="student">成长树</button>
+        <button type="button" class="app-nav-item" data-nav="teacher" data-for="teacher">工作台</button>
+        <button type="button" class="app-nav-item" data-nav="teacher-classes" data-for="teacher">我的班</button>
+      </nav>
+      <div class="top-user" id="topUser">
+        <button type="button" class="login-btn login-btn-sm" data-login id="headerLoginBtn">登录</button>
+        <div class="user-logged" id="userLogged" hidden>
+          <span class="user-balance" id="userBalance">余额 ¥0</span>
+          <span class="user-points" id="userPoints">0 积分</span>
+          <button type="button" class="user-avatar" id="userAvatar" title="退出登录" aria-label="账户">学</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <!-- Discover -->
+      <section class="view" id="view-discover" data-view="discover">
+        <div class="discover-layout">
+          <aside class="discover-side">
+            <p class="page-kicker">附近好课</p>
+            <h2 class="page-title">像打车一样约到一堂课</h2>
+            <p class="page-desc">兴趣课与学业课都能约，按距离筛选，满员自动开班。</p>
+
+            <div class="filter-block">
+              <p class="filter-label">课程类型</p>
+              <div class="chip-row" id="filterKind" role="group">
+                <button type="button" class="chip is-active" data-kind="全部">全部</button>
+                <button type="button" class="chip" data-kind="兴趣课">兴趣课</button>
+                <button type="button" class="chip" data-kind="学业课">学业课</button>
+              </div>
+            </div>
+            <div class="filter-block">
+              <p class="filter-label">距离</p>
+              <div class="chip-row" id="filterDistance" role="group">
+                <button type="button" class="chip" data-radius="2">2 km</button>
+                <button type="button" class="chip is-active" data-radius="5">5 km</button>
+                <button type="button" class="chip" data-radius="7">7 km</button>
+                <button type="button" class="chip" data-radius="10">10 km</button>
+              </div>
+            </div>
+            <div class="filter-block">
+              <p class="filter-label">科目</p>
+              <div class="chip-row" id="filterCategory" role="group">
+                <button type="button" class="chip is-active" data-cat="全部">全部</button>
+                <button type="button" class="chip" data-cat="足球" data-kind-tag="兴趣课">足球</button>
+                <button type="button" class="chip" data-cat="篮球" data-kind-tag="兴趣课">篮球</button>
+                <button type="button" class="chip" data-cat="钢琴" data-kind-tag="兴趣课">钢琴</button>
+                <button type="button" class="chip" data-cat="吉他" data-kind-tag="兴趣课">吉他</button>
+                <button type="button" class="chip" data-cat="舞蹈" data-kind-tag="兴趣课">舞蹈</button>
+                <button type="button" class="chip" data-cat="绘画" data-kind-tag="兴趣课">绘画</button>
+                <button type="button" class="chip" data-cat="数学" data-kind-tag="学业课">数学</button>
+                <button type="button" class="chip" data-cat="英语" data-kind-tag="学业课">英语</button>
+                <button type="button" class="chip" data-cat="语文" data-kind-tag="学业课">语文</button>
+                <button type="button" class="chip" data-cat="物理" data-kind-tag="学业课">物理</button>
+                <button type="button" class="chip" data-cat="化学" data-kind-tag="学业课">化学</button>
+                <button type="button" class="chip" data-cat="生物" data-kind-tag="学业课">生物</button>
+                <button type="button" class="chip" data-cat="地理" data-kind-tag="学业课">地理</button>
+                <button type="button" class="chip" data-cat="历史" data-kind-tag="学业课">历史</button>
+                <button type="button" class="chip" data-cat="政治" data-kind-tag="学业课">政治</button>
+              </div>
+            </div>
+            <div class="filter-block" id="filterGradeBlock" hidden>
+              <p class="filter-label">年级</p>
+              <div class="chip-row" id="filterGrade" role="group">
+                <button type="button" class="chip is-active" data-grade="all">不限</button>
+                <button type="button" class="chip" data-grade="小学">小学</button>
+                <button type="button" class="chip" data-grade="初一">初一</button>
+                <button type="button" class="chip" data-grade="初二">初二</button>
+                <button type="button" class="chip" data-grade="初三">初三</button>
+                <button type="button" class="chip" data-grade="高一">高一</button>
+                <button type="button" class="chip" data-grade="高二">高二</button>
+                <button type="button" class="chip" data-grade="高三">高三</button>
+              </div>
+            </div>
+            <div class="filter-block">
+              <p class="filter-label">适合年龄</p>
+              <div class="chip-row" id="filterAge" role="group">
+                <button type="button" class="chip is-active" data-age="all">不限</button>
+                <button type="button" class="chip" data-age="6">6–8</button>
+                <button type="button" class="chip" data-age="9">9–12</button>
+                <button type="button" class="chip" data-age="13">13+</button>
+              </div>
+            </div>
+          </aside>
+
+          <div class="discover-main">
+            <div class="map-plane" id="mapPlane">
+              <div id="amapContainer" class="amap-container"></div>
+              <div class="map-fallback" id="mapFallback">
+                <div class="map-grid"></div>
+                <div class="map-pulse" style="left:58%;top:42%"></div>
+                <div class="map-pin" style="left:58%;top:42%"></div>
+                <div class="map-pin soft" style="left:34%;top:58%"></div>
+                <div class="map-pin soft" style="left:72%;top:28%"></div>
+                <p class="map-fallback-tip">配置高德 Key 后显示真实地图</p>
+              </div>
+              <div class="map-overlay">
+                <p class="map-loc" id="mapLoc">定位中…</p>
+                <button type="button" class="map-locate-btn" id="mapLocateBtn">重新定位</button>
+              </div>
+            </div>
+            <div class="class-list" id="classList"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Class detail -->
+      <section class="view" id="view-detail" data-view="detail">
+        <button type="button" class="back-link" data-nav="discover">← 返回发现</button>
+        <div class="detail-layout" id="detailContent"></div>
+      </section>
+
+      <!-- Orders -->
+      <section class="view" id="view-orders" data-view="orders">
+        <div class="page-head">
+          <p class="page-kicker">我的课程</p>
+          <h2 class="page-title">一次一付，余额自动扣</h2>
+          <p class="page-desc">像校园卡一样，课卡有余额就自动扣款；余额不足时可单节支付或去充值。</p>
+        </div>
+        <div class="order-list" id="orderList"></div>
+      </section>
+
+      <!-- Wallet / campus-card style -->
+      <section class="view" id="view-wallet" data-view="wallet">
+        <div class="wallet-layout">
+          <div class="wallet-main">
+            <p class="page-kicker">学生课卡</p>
+            <h2 class="page-title">先充值，上课自动扣</h2>
+            <p class="page-desc">类似校园卡：余额留在平台，每上一节自动扣一节。充得多送得多。</p>
+
+            <div class="wallet-card">
+              <p class="wallet-card-label">课卡余额</p>
+              <p class="wallet-card-num">¥<span id="walletBalance">0</span></p>
+              <p class="wallet-card-sub">可用于兴趣课与学业课 · 一课一结自动扣款</p>
+            </div>
+
+            <div class="section-row wallet-pack-head">
+              <h3>充值优惠</h3>
+              <span class="wallet-tip">多充多送</span>
+            </div>
+            <div class="recharge-grid" id="rechargeGrid"></div>
+          </div>
+
+          <aside class="wallet-side">
+            <p class="panel-label">使用说明</p>
+            <ul class="wallet-rules">
+              <li>充值到账即时生效，上课从余额扣款</li>
+              <li>赠送金额与本金一并计入课卡余额</li>
+              <li>未消耗余额可申请退回本金部分</li>
+              <li>充值不计积分；实际上课时扣款才累计成长树积分</li>
+            </ul>
+            <p class="panel-label" style="margin-top:1.5rem">近期流水</p>
+            <div class="wallet-ledger" id="walletLedger"></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Growth tree -->
+      <section class="view" id="view-tree" data-view="tree">
+        <div class="tree-layout">
+          <div class="tree-copy">
+            <p class="page-kicker">成长树</p>
+            <h2 class="page-title">陪孩子长大，每一堂课都算数</h2>
+            <p class="page-desc">1 元付费 = 1 积分。积分灌溉成长树，树长大后可兑换绘本、器材、课时券与赛事门票。</p>
+            <div class="tree-stats">
+              <div>
+                <p class="stat-num" id="treePoints">1280</p>
+                <p class="stat-label">当前积分</p>
+              </div>
+              <div>
+                <p class="stat-num">Lv.3</p>
+                <p class="stat-label">茁壮成长</p>
+              </div>
+              <div>
+                <p class="stat-num">12</p>
+                <p class="stat-label">已上课次</p>
+              </div>
+            </div>
+            <div class="gift-row" id="giftRow"></div>
+          </div>
+          <div class="tree-stage" aria-hidden="true">
+            <svg class="growth-tree" viewBox="0 0 320 420" fill="none">
+              <ellipse cx="160" cy="390" rx="110" ry="18" fill="#2a5f58" opacity="0.12"/>
+              <path d="M160 380 V160" stroke="#2a5f58" stroke-width="10" stroke-linecap="round"/>
+              <path d="M160 280 C120 250 90 220 78 180" stroke="#2a5f58" stroke-width="7" stroke-linecap="round"/>
+              <path d="M160 250 C200 220 230 190 245 150" stroke="#2a5f58" stroke-width="7" stroke-linecap="round"/>
+              <path d="M160 210 C130 180 110 140 105 110" stroke="#2a5f58" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="78" cy="170" r="36" fill="#6d8f7a" opacity="0.85"/>
+              <circle cx="245" cy="140" r="42" fill="#5f8270"/>
+              <circle cx="105" cy="100" r="28" fill="#7fa08a"/>
+              <circle cx="160" cy="130" r="52" fill="#2a5f58"/>
+              <circle cx="160" cy="130" r="28" fill="#c4964a" opacity="0.9"/>
+              <circle cx="168" cy="90" r="6" fill="#e8efe6"/>
+              <circle cx="140" cy="108" r="4" fill="#e8efe6" opacity="0.7"/>
+            </svg>
+            <p class="tree-caption">再浇 220 积分，解锁「枝繁叶茂」</p>
+            <div class="water-bar"><span style="width:78%"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teacher -->
+      <section class="view" id="view-teacher" data-view="teacher">
+        <div class="page-head">
+          <p class="page-kicker">老师工作台</p>
+          <h2 class="page-title">有课有生，越教越值钱</h2>
+          <p class="page-desc">可发布兴趣课与学业课。按时、好评、出勤、年限，攒成你的涨薪资本。</p>
+        </div>
+
+        <div class="teacher-grid">
+          <article class="credit-panel">
+            <p class="panel-label">综合信用分</p>
+            <p class="credit-score">92.4</p>
+            <p class="credit-coef">课时费系数 ×1.17</p>
+            <div class="credit-bars">
+              <div class="bar-row"><span>按时率</span><i style="--w:96%"></i><b>96%</b></div>
+              <div class="bar-row"><span>好评率</span><i style="--w:94%"></i><b>4.9</b></div>
+              <div class="bar-row"><span>出勤率</span><i style="--w:98%"></i><b>98%</b></div>
+              <div class="bar-row"><span>执教年限</span><i style="--w:60%"></i><b>6 年</b></div>
+            </div>
+            <p class="fee-line">基础 100 元 → 当前 <strong>117 元 / 课</strong></p>
+          </article>
+
+          <article class="earn-panel">
+            <p class="panel-label">本周结算</p>
+            <p class="earn-num">¥ 1,404</p>
+            <p class="earn-sub">已上课 12 节 · 平台托管后即时到账</p>
+            <ul class="earn-list">
+              <li><span>兴趣 · 少儿足球</span><span>¥117</span></li>
+              <li><span>学业 · 小学数学</span><span>¥117</span></li>
+              <li><span>兴趣 · 钢琴启蒙</span><span>¥117</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-teacher-classes" data-view="teacher-classes">
+        <div class="page-head">
+          <p class="page-kicker">我的班</p>
+          <h2 class="page-title">兴趣课 · 学业课一起管</h2>
+          <p class="page-desc">查看成班进度，满员后开课结算。</p>
+        </div>
+        <div class="teacher-classes" style="padding-top:0">
+          <div class="section-row">
+            <h3>我发布的攒班</h3>
+            <button type="button" class="btn-primary btn-sm" id="publishBtn">发布新班</button>
+          </div>
+          <div class="t-class-list" id="teacherClassList"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Toast / modal -->
+  <div class="toast" id="toast" hidden></div>
+
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">确认报名</h3>
+      <p id="modalBody"></p>
+      <div class="modal-actions">
+        <button type="button" class="btn-ghost" id="modalCancel">取消</button>
+        <button type="button" class="btn-primary" id="modalConfirm">确认占坑</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login -->
+  <div class="modal-backdrop" id="loginModal" hidden>
+    <div class="modal modal-login" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <button type="button" class="modal-close" id="loginClose" aria-label="关闭">×</button>
+      <div class="login-brand">
+        <img src="images/logo.svg" alt="" width="40" height="40" />
+        <h3 id="loginTitle">登录攒班</h3>
+        <p>附近好课，一键攒班</p>
+      </div>
+
+      <div class="login-tabs" role="tablist">
+        <button type="button" class="login-tab is-active" data-login-tab="phone" role="tab" aria-selected="true">手机号登录</button>
+        <button type="button" class="login-tab" data-login-tab="wechat" role="tab" aria-selected="false">微信登录</button>
+      </div>
+
+      <div class="login-panel is-active" id="loginPanelPhone" data-panel="phone">
+        <label class="field">
+          <span>手机号</span>
+          <input type="tel" id="loginPhone" maxlength="11" placeholder="请输入手机号" autocomplete="tel" />
+        </label>
+        <label class="field field-code">
+          <span>验证码</span>
+          <div class="code-row">
+            <input type="text" id="loginCode" maxlength="6" placeholder="6 位验证码" inputmode="numeric" autocomplete="one-time-code" />
+            <button type="button" class="btn-code" id="sendCodeBtn">获取验证码</button>
+          </div>
+        </label>
+        <p class="login-hint" id="loginHint">验证码将发送至你的手机，5 分钟内有效</p>
+        <button type="button" class="btn-primary btn-block" id="phoneLoginBtn">登录</button>
+      </div>
+
+      <div class="login-panel" id="loginPanelWechat" data-panel="wechat" hidden>
+        <div class="wechat-box">
+          <p class="wechat-tip">打开微信扫一扫，登录攒班</p>
+          <div id="wechatQrHost" class="wechat-qr-host">
+            <div class="wechat-qr-placeholder" id="wechatQrPlaceholder">点击下方加载二维码</div>
+          </div>
+          <button type="button" class="btn-wechat" id="wechatLoginBtn">加载微信扫码</button>
+          <p class="login-hint" id="wechatHint">需配置微信开放平台网站应用后可用</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Role pick for new users -->
+  <div class="modal-backdrop" id="roleModal" hidden>
+    <div class="modal modal-role" role="dialog" aria-modal="true" aria-labelledby="roleTitle">
+      <h3 id="roleTitle">欢迎加入攒班</h3>
+      <p class="role-lead">请选择你的身份，选定后进入对应界面。</p>
+      <div class="role-choices">
+        <button type="button" class="role-card" data-role="student">
+          <span class="role-mark">学</span>
+          <strong>我是学生</strong>
+          <span>约兴趣课与学业课、报名攒班、成长树积分</span>
+        </button>
+        <button type="button" class="role-card" data-role="teacher">
+          <span class="role-mark teacher">师</span>
+          <strong>我是老师</strong>
+          <span>发布兴趣/学业攒班、信用涨薪、一课一结到账</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+  <script src="carousel.js"></script>
+  <script src="map.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

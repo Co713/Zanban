@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" fill="none" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7ebe3"/>
+      <stop offset="100%" stop-color="#c9d4c6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4ad66"/>
+      <stop offset="100%" stop-color="#b8873c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#pg)"/>
+
+  <!-- stacked lesson cards -->
+  <g transform="translate(170 180)">
+    <rect x="48" y="0" width="420" height="260" rx="4" fill="#2a5f58" fill-opacity="0.18"/>
+    <rect x="24" y="36" width="420" height="260" rx="4" fill="#2a5f58" fill-opacity="0.32"/>
+    <rect width="420" height="260" rx="4" fill="#2a5f58"/>
+    <text x="36" y="72" fill="#e8efe6" font-family="system-ui,sans-serif" font-size="28" letter-spacing="0.18em" opacity="0.7">LESSON</text>
+    <text x="36" y="150" fill="#e8efe6" font-family="system-ui,sans-serif" font-size="72" font-weight="300">01</text>
+    <rect x="36" y="196" width="120" height="10" rx="2" fill="#c4964a"/>
+    <rect x="36" y="220" width="200" height="8" rx="2" fill="#e8efe6" fill-opacity="0.25"/>
+  </g>
+
+  <g transform="translate(250 520)">
+    <rect width="420" height="200" rx="4" fill="#f4f6f1" fill-opacity="0.95"/>
+    <text x="36" y="64" fill="#2a5f58" font-family="system-ui,sans-serif" font-size="26" letter-spacing="0.16em" opacity="0.55">LESSON</text>
+    <text x="36" y="128" fill="#2a5f58" font-family="system-ui,sans-serif" font-size="56" font-weight="300">02</text>
+    <rect x="280" y="96" width="100" height="36" rx="2" fill="#c4964a" fill-opacity="0.9"/>
+  </g>
+
+  <!-- bonus coin / gift mark -->
+  <g transform="translate(560 760)">
+    <circle cx="90" cy="90" r="90" fill="url(#gold)"/>
+    <circle cx="90" cy="90" r="68" fill="none" stroke="#f4f6f1" stroke-opacity="0.35" stroke-width="3"/>
+    <path d="M60 98h60M90 68v60" stroke="#f4f6f1" stroke-width="6" stroke-linecap="round"/>
+    <text x="90" y="210" text-anchor="middle" fill="#2a5f58" font-family="system-ui,sans-serif" font-size="22" letter-spacing="0.2em" opacity="0.55">�</text>
+  </g>
+
+  <circle cx="140" cy="860" r="10" fill="#2a5f58" opacity="0.2"/>
+  <circle cx="780" cy="220" r="7" fill="#c4964a" opacity="0.55"/>
+</svg>

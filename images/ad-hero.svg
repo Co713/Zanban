@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f4a42"/>
+      <stop offset="55%" stop-color="#3d5c52"/>
+      <stop offset="100%" stop-color="#6a8174"/>
+    </linearGradient>
+    <linearGradient id="hg2" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#c4964a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#c4964a" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hg3" cx="72%" cy="42%" r="38%">
+      <stop offset="0%" stop-color="#e8efe6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#e8efe6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#hg)"/>
+  <rect width="1600" height="900" fill="url(#hg2)"/>
+  <rect width="1600" height="900" fill="url(#hg3)"/>
+
+  <!-- soft architecture lines -->
+  <g stroke="#e8efe6" stroke-opacity="0.12" stroke-width="1.5">
+    <path d="M820 0v900M980 0v900M1140 0v900M1300 0v900"/>
+    <path d="M0 220h1600M0 420h1600M0 620h1600"/>
+  </g>
+
+  <!-- abstract open book mark -->
+  <g transform="translate(980 210)">
+    <!-- meeting arcs -->
+    <g transform="translate(100 -20)" stroke="#e8efe6" fill="none" stroke-linecap="round">
+      <path d="M-40 90c28-64 78-96 140-96s112 32 140 96" stroke-width="4" opacity="0.25"/>
+      <path d="M-8 74c20-44 54-66 100-66s80 22 100 66" stroke-width="5" opacity="0.45"/>
+      <path d="M28 58c12-26 32-40 64-40s52 14 64 40" stroke-width="6" opacity="0.8"/>
+      <circle cx="92" cy="-8" r="10" fill="#c4964a" stroke="none"/>
+    </g>
+
+    <path d="M0 80c70-42 150-52 230-18v220c-82-34-162-28-230 18V80z" fill="#e8efe6" fill-opacity="0.92"/>
+    <path d="M460 80c-70-42-150-52-230-18v220c82-34 162-28 230 18V80z" fill="#e8efe6" fill-opacity="0.72"/>
+    <path d="M230 64v236" stroke="#2f4a42" stroke-opacity="0.25" stroke-width="3"/>
+    <rect x="248" y="118" width="88" height="10" rx="2" fill="#c4964a"/>
+    <rect x="248" y="148" width="140" height="6" rx="2" fill="#2f4a42" fill-opacity="0.18"/>
+    <rect x="248" y="168" width="118" height="6" rx="2" fill="#2f4a42" fill-opacity="0.12"/>
+
+    <!-- distance chips directly under the book mark -->
+    <g transform="translate(35 330)" font-family="system-ui,sans-serif" font-size="22" letter-spacing="0.12em" fill="#e8efe6">
+      <rect x="0" y="0" width="120" height="44" rx="2" fill="#2a5f58" fill-opacity="0.7"/>
+      <text x="60" y="29" text-anchor="middle" fill-opacity="0.95">2km</text>
+      <rect x="140" y="0" width="120" height="44" rx="2" fill="#e8efe6" fill-opacity="0.14"/>
+      <text x="200" y="29" text-anchor="middle" fill-opacity="0.78">5km</text>
+      <rect x="280" y="0" width="120" height="44" rx="2" fill="#e8efe6" fill-opacity="0.14"/>
+      <text x="340" y="29" text-anchor="middle" fill-opacity="0.78">7km</text>
+    </g>
+  </g>
+</svg>

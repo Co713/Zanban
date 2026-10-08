@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" fill="none" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d5ddd4"/>
+      <stop offset="100%" stop-color="#b4c2b3"/>
+    </linearGradient>
+    <linearGradient id="rb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f6f1"/>
+      <stop offset="100%" stop-color="#e4ebe0"/>
+    </linearGradient>
+    <linearGradient id="rr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2a5f58"/>
+      <stop offset="100%" stop-color="#1e4641"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#rg)"/>
+
+  <!-- points ladder -->
+  <g transform="translate(120 160)" stroke="#2a5f58" fill="none" stroke-linecap="round">
+    <path d="M40 520 V280" stroke-width="3" opacity="0.2"/>
+    <circle cx="40" cy="520" r="10" fill="#2a5f58" stroke="none" opacity="0.35"/>
+    <circle cx="40" cy="400" r="10" fill="#2a5f58" stroke="none" opacity="0.55"/>
+    <circle cx="40" cy="280" r="12" fill="#c4964a" stroke="none"/>
+    <rect x="70" y="500" width="160" height="40" rx="2" fill="#2a5f58" fill-opacity="0.12" stroke="none"/>
+    <rect x="70" y="380" width="200" height="40" rx="2" fill="#2a5f58" fill-opacity="0.2" stroke="none"/>
+    <rect x="70" y="258" width="240" height="44" rx="2" fill="#2a5f58" fill-opacity="0.35" stroke="none"/>
+  </g>
+
+  <!-- gift geometry -->
+  <g transform="translate(420 320)">
+    <rect x="40" y="120" width="280" height="220" rx="4" fill="url(#rb)"/>
+    <rect x="40" y="120" width="280" height="48" fill="url(#rr)"/>
+    <rect x="160" y="120" width="40" height="220" fill="#2a5f58" fill-opacity="0.75"/>
+    <!-- bow -->
+    <path d="M180 96c-40-36-88-28-100 8 28 8 64 8 100 8z" fill="#c4964a"/>
+    <path d="M180 96c40-36 88-28 100 8-28 8-64 8-100 8z" fill="#c4964a" opacity="0.85"/>
+    <circle cx="180" cy="104" r="14" fill="#d4ad66"/>
+  </g>
+
+  <!-- star reward -->
+  <g transform="translate(660 720)">
+    <path d="M0-42 L12-12 L44-8 L20 14 L26 46 L0 30 L-26 46 L-20 14 L-44-8 L-12-12 Z" fill="#c4964a"/>
+  </g>
+
+  <circle cx="760" cy="220" r="8" fill="#2a5f58" opacity="0.25"/>
+  <circle cx="200" cy="780" r="6" fill="#c4964a" opacity="0.5"/>
+</svg>
